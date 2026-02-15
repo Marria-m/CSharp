@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpDay06Giza01", "CsharpDay06Giza01\CsharpDay06Giza01.csproj", "{6DF3B934-675B-4A1C-8504-2BA1E20BBEB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmmon", "Cmmon\Cmmon.csproj", "{928910C9-31B1-4A33-9C2A-DCADC8843403}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DF3B934-675B-4A1C-8504-2BA1E20BBEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF3B934-675B-4A1C-8504-2BA1E20BBEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF3B934-675B-4A1C-8504-2BA1E20BBEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF3B934-675B-4A1C-8504-2BA1E20BBEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928910C9-31B1-4A33-9C2A-DCADC8843403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928910C9-31B1-4A33-9C2A-DCADC8843403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928910C9-31B1-4A33-9C2A-DCADC8843403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928910C9-31B1-4A33-9C2A-DCADC8843403}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4239365-C5C2-4B2F-B6D8-E088BCD6E88F}
+	EndGlobalSection
+EndGlobal
