@@ -1,0 +1,15 @@
+C:\Users\maria\source\repos\Day08Solution\Part02\bin\Debug\net5.0\Part02.exe
+C:\Users\maria\source\repos\Day08Solution\Part02\bin\Debug\net5.0\Part02.deps.json
+C:\Users\maria\source\repos\Day08Solution\Part02\bin\Debug\net5.0\Part02.runtimeconfig.json
+C:\Users\maria\source\repos\Day08Solution\Part02\bin\Debug\net5.0\Part02.runtimeconfig.dev.json
+C:\Users\maria\source\repos\Day08Solution\Part02\bin\Debug\net5.0\Part02.dll
+C:\Users\maria\source\repos\Day08Solution\Part02\bin\Debug\net5.0\Part02.pdb
+C:\Users\maria\source\repos\Day08Solution\Part02\obj\Debug\net5.0\Part02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maria\source\repos\Day08Solution\Part02\obj\Debug\net5.0\Part02.AssemblyInfoInputs.cache
+C:\Users\maria\source\repos\Day08Solution\Part02\obj\Debug\net5.0\Part02.AssemblyInfo.cs
+C:\Users\maria\source\repos\Day08Solution\Part02\obj\Debug\net5.0\Part02.csproj.CoreCompileInputs.cache
+C:\Users\maria\source\repos\Day08Solution\Part02\obj\Debug\net5.0\Part02.dll
+C:\Users\maria\source\repos\Day08Solution\Part02\obj\Debug\net5.0\refint\Part02.dll
+C:\Users\maria\source\repos\Day08Solution\Part02\obj\Debug\net5.0\Part02.pdb
+C:\Users\maria\source\repos\Day08Solution\Part02\obj\Debug\net5.0\Part02.genruntimeconfig.cache
+C:\Users\maria\source\repos\Day08Solution\Part02\obj\Debug\net5.0\ref\Part02.dll
