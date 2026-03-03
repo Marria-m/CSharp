@@ -1,0 +1,15 @@
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\bin\Debug\net5.0\TaskLINQ02.exe
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\bin\Debug\net5.0\TaskLINQ02.deps.json
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\bin\Debug\net5.0\TaskLINQ02.runtimeconfig.json
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\bin\Debug\net5.0\TaskLINQ02.runtimeconfig.dev.json
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\bin\Debug\net5.0\TaskLINQ02.dll
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\bin\Debug\net5.0\TaskLINQ02.pdb
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\obj\Debug\net5.0\TaskLINQ02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\obj\Debug\net5.0\TaskLINQ02.AssemblyInfoInputs.cache
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\obj\Debug\net5.0\TaskLINQ02.AssemblyInfo.cs
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\obj\Debug\net5.0\TaskLINQ02.csproj.CoreCompileInputs.cache
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\obj\Debug\net5.0\TaskLINQ02.dll
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\obj\Debug\net5.0\refint\TaskLINQ02.dll
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\obj\Debug\net5.0\TaskLINQ02.pdb
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\obj\Debug\net5.0\TaskLINQ02.genruntimeconfig.cache
+C:\Users\maria\source\repos\TaskLINQ02\TaskLINQ02\obj\Debug\net5.0\ref\TaskLINQ02.dll
