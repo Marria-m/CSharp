@@ -1,0 +1,37 @@
+﻿@model SchoolSystem.ViewModels.DepartmentDetailsVM
+@{
+    ViewData["Title"] = "Department Details";
+}
+
+<h2>@Model.DepartmentName</h2>
+
+<p>
+    <strong>State:</strong>
+    @if (Model.DepartmentState == "Main")
+    {
+        <span style="color:green;">Main (more than 50 students)</span>
+    }
+    else
+    {
+        <span style="color:orange;">Branch (50 students or less)</span>
+    }
+</p>
+
+<h4>Students older than 25:</h4>
+@if (Model.StudentsAbove25 != null && Model.StudentsAbove25.Any())
+{
+    <select size="6" style="width:250px;">
+        @foreach (var name in Model.StudentsAbove25)
+        {
+            <option>@name</option>
+        }
+    </select>
+}
+else
+{
+    <p>No students older than 25 in this department.</p>
+}
+
+<br />
+<br />
+<a href="/Department/ShowAll">← Back to All Departments</a>

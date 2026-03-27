@@ -1,0 +1,33 @@
+﻿@model List<SchoolSystem.Models.Department>
+@{
+    ViewData["Title"] = "All Departments";
+}
+
+<h2>All Departments</h2>
+<a href="/Department/Add">+ Add New Department</a>
+<br />
+<br />
+
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Manager</th>
+            <th>Students Count</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dept in Model)
+        {
+            <tr>
+                <td>@dept.Id</td>
+                <td>@dept.Name</td>
+                <td>@dept.MgrName</td>
+                <td>@(dept.Students?.Count ?? 0)</td>
+                <td><a href="/Department/ShowDetails?id=@dept.Id">View Details</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
