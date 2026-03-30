@@ -1,0 +1,41 @@
+﻿@model SchoolSystem.ViewModels.StudentDeptViewModel
+
+@{
+    ViewData["Title"] = "Add Student";
+}
+
+<h1>Add Student</h1>
+
+@* POST to SaveAdd *@
+<form method="post" action="/Student/SaveAdd">
+    <div>
+        <label>Name</label>
+        <input type="text" name="Name" value="@Model?.Name" class="form-control" />
+    </div>
+    <br />
+    <div>
+        <label>Age</label>
+        <input type="number" name="Age" value="@Model?.Age" class="form-control" />
+    </div>
+    <br />
+    <div>
+        <label>Department Id</label>
+        @* Dropdown *@
+        <select name="DepartmentId" class="form-control">
+            @foreach (var item in Model.Departments)
+            {
+                @if (Model.DepartmentId == item.Id)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <br />
+    <input type="submit" value="Create" class="btn btn-primary" />
+    <a href="/Student/Index" class="btn btn-secondary">Cancel</a>
+</form>

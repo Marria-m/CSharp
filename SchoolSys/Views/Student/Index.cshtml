@@ -1,0 +1,81 @@
+﻿@model List<SchoolSystem.Models.Student>
+
+@{
+    ViewData["Title"] = "All Students";
+}
+
+<h1>All Students</h1>
+
+<a href="/Student/Add" class="btn btn-success mt-3 mb-3">+ New Student</a>
+
+@* Search & Filter Form *@
+<form method="get" action="/Student/Index" class="d-flex gap-2 mb-3">
+    <input type="text"
+           name="searchName"
+           placeholder="Search by name..."
+           value="@ViewBag.SearchName"
+           class="form-control" style="width:200px;" />
+
+    <select name="deptId" class="form-control" style="width:200px;">
+        <option value="0">-- All Departments --</option>
+        @foreach (var dept in ViewBag.Departments)
+        {
+            if (ViewBag.DeptId != null && ViewBag.DeptId == dept.Id)
+            {
+                <option value="@dept.Id" selected>@dept.Name</option>
+            }
+            else
+            {
+                <option value="@dept.Id">@dept.Name</option>
+            }
+        }
+    </select>
+
+    <button type="submit" class="btn btn-primary">Search</button>
+    <a href="/Student/Index" class="btn btn-secondary">Clear</a>
+</form>
+
+@* Students Table *@
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Department</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Age</td>
+            <td>@item.Department?.Name</td>
+            <td>
+                <a href="/Student/Details?id=@item.Id" class="btn btn-info btn-sm">Details</a>
+                <a href="/Student/Edit?id=@item.Id" class="btn btn-warning btn-sm">Edit</a>
+                <a href="/Student/Delete?id=@item.Id" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+
+@* Pagination *@
+@{
+    int currentPage = ViewBag.CurrentPage;
+    int totalPages = ViewBag.TotalPages;
+    string search = ViewBag.SearchName ?? "";
+    int deptId = ViewBag.DeptId ?? 0;
+}
+
+<nav>
+    <ul class="pagination">
+        @for (int i = 1; i <= totalPages; i++)
+        {
+            <li class="page-item @(i == currentPage ? "active" : "")">
+                <a class="page-link"
+                   href="/Student/Index?searchName=@search&deptId=@deptId&page=@i">@i</a>
+            </li>
+        }
+    </ul>
+</nav>

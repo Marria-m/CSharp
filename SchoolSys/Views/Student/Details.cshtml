@@ -1,0 +1,45 @@
+﻿@model SchoolSystem.Models.Student
+
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<h1>Student Details</h1>
+
+<table class="table table-bordered" style="width:400px;">
+    <tr><th>Id</th>         <td>@Model.Id</td></tr>
+    <tr><th>Name</th>       <td>@Model.Name</td></tr>
+    <tr><th>Age</th>        <td>@Model.Age</td></tr>
+    <tr><th>Department</th> <td>@Model.Department?.Name</td></tr>
+</table>
+
+<h3>Enrolled Courses</h3>
+
+@if (Model.StuCrsRes != null && Model.StuCrsRes.Any())
+{
+    <table class="table table-hover table-bordered">
+        <tr>
+            <th>Course</th>
+            <th>Degree</th>
+            <th>Min Degree</th>
+            <th>Grade</th>
+        </tr>
+        @foreach (var record in Model.StuCrsRes)
+        {
+            <tr>
+                <td>@record.Course?.Name</td>
+                <td>@record.Course?.Degree</td>
+                <td>@record.Course?.MinDegree</td>
+                <td>@record.Grade</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>Not enrolled in any courses.</p>
+}
+
+<a href="/Student/Edit?id=@Model.Id" class="btn btn-warning">Edit</a>
+<a href="/Student/Delete?id=@Model.Id" class="btn btn-danger">Delete</a>
+<a href="/Student/Index" class="btn btn-secondary">Back</a>
